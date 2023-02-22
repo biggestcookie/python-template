@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "pip: install",
+            "detail": "pip install -r requirements.txt",
+            "type": "shell",
+            "problemMatcher": [],
+            "command": "${command:python.interpreterPath}",
+            "args": [
+                "-m",
+                "pip",
+                "install",
+                "-r",
+                "requirements.txt"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "python: main.py",
+            "detail": "python main.py",
+            "type": "shell",
+            "problemMatcher": [],
+            "command": "${command:python.interpreterPath}",
+            "args": [
+                "main.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
